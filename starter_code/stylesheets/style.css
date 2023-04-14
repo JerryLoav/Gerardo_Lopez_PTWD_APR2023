@@ -8,3 +8,97 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    background-color: #540B51;
+    width: 100%;
+    justify-content: space-between;
+}
+.imagenNav{
+    width: 100px;
+}
+.navBar > div > button{
+    background-color: transparent;
+    border: none;
+}
+.header{
+display: flex;
+flex-direction: row;
+background-color: #540B51;
+color: white;
+}
+.header>div>p>span{
+    color: #ECB12F;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.outlineButton{
+    color: #540B51;
+    background-color: white;
+    border: 1px solid #540B51 ;
+    padding: 24px;
+    border-radius: 4%;
+}
+#googleButton{
+    color: white;
+    background-color: #4285F4;
+    border: none ;
+    padding: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+}
+#googleButton>img{
+    background-color: white;
+    height: 40px;
+    
+}
+#googleButton>span{
+    width: 100%;
+}
+.images>img{
+    height: 40px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .navBar> div > ul{
+     display: none;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header>div>img{
+        width: 100%;
+    }
+    .header>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .header>div>h1{
+        text-align: center;
+    }
+
+    .buttonContainer{
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .outlineButton{
+        width: 90%;
+    }
+ 
+    .buttonContainer>button{
+        margin: 8px 16px;
+    }
+ }
